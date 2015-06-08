@@ -2,7 +2,8 @@
 
 /* Body */
 body {
-  /*background: cornflowerblue;*/
+  background: /*#FFCC33*/ #666666;
+  background-image: url(../img/web-tile.png) ;
 }
 
 .container {
@@ -24,7 +25,6 @@ p {
 
 h1  {
   background: pink;
-
 }
 
 h2  {
@@ -68,6 +68,7 @@ nav {
 .container {
   width: 90%;
   margin: auto;
+  max-width: 1200px;
 }
 
 /*  SECTIONS  */
@@ -135,11 +136,22 @@ footer {
 
  }
 
+/*Transition screen size all*/
+ *{
+    -webkit-transition:all 1s ease;
+         -moz-transition:all 1s ease;
+               -o-transition:all 1s ease;
+                     transition:all 1s ease;
+}
+
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */ 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
   .col { 
     margin: 1% 0 1% 0%;}
   .span_2_of_2, .span_1_of_2 { width: 95%; }
   .gallery { height: 200vw; }
-  .gallery img { width: 50%; } }
+  .gallery img { width: 50%; }
+  .nav li{display: block;}
+
+}
