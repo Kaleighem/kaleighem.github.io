@@ -34,9 +34,10 @@ img{
 /*Navigation bar*/
 
 nav {
-  display: -webkit-flex ;
+  display: inline-block ;
   background: purple;
-  -webkit-flex-direction: row-reverse;
+  float: right;
+  
 }
 
  li {
