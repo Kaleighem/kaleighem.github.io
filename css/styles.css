@@ -3,11 +3,11 @@
 /* Body */
 body {
   background: /*#FFCC33*/ #666666;
-  background-image: url(../img/web-tile.png) ;
+  
 }
 
 .container {
-  background: cornflowerblue;
+  background: #FFCC99;
 }
 
 .main {
@@ -154,4 +154,9 @@ footer {
   .gallery img { width: 50%; }
   .nav li{display: block;}
 
+}
+
+@media only screen and (min-width: 482px) {
+  body {background-image: url(../img/web-tile.png);
+  background-attachment: fixed;}
 }
