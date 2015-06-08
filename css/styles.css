@@ -5,6 +5,10 @@ body {
   /*background: cornflowerblue;*/
 }
 
+.container {
+  background: cornflowerblue;
+}
+
 .main {
   background: lavender;
 }
@@ -14,14 +18,18 @@ body {
 p {
   padding: 0% 5% 0% 5%;
   background: blue;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 h1  {
   background: pink;
+
 }
 
 h2  {
   text-align: center;
+  background: hotpink;
 }
 
 /*Images*/
@@ -40,7 +48,7 @@ nav {
   
 }
 
- li {
+ .nav li {
   background: red;
   display: inline-block;
   list-style: none;
