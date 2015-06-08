@@ -106,20 +106,17 @@ footer {
 /*Gallery*/
 .gallery {
   background: cornflowerblue;
-  display: -ms-flexbox;
--ms-flex-direction: column;
--ms-flex-wrap: wrap;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-height: 100vw;
-font-size: 0;
-align-items: center;
+   display: flex; 
+  flex-direction: column; 
+  flex-wrap: wrap;
+  height: 100vw;
+  max-height: 800px;
+
 }
 
 
 .gallery img {
-  width: 49%;
+  width: 33.3%;
 
   
 }
@@ -138,3 +135,13 @@ align-items: center;
   .span_2_of_2, .span_1_of_2 { width: 95%; }
   .gallery { height: 200vw; }
   .gallery img { width: 50%; } }
+
+
+/* Supporyts*/
+  @supports not (flex-wrap: wrap) {
+  .gallery { display: block; }
+  .gallery img {  
+  display: inline-block;
+  vertical-align: top;
+  }
+}
