@@ -114,27 +114,28 @@ footer {
 
 }
 
-
 .gallery img {
   width: 33.3%;
-
-  
+  align-self: center;
 }
 
-.desc {
-    text-align: center;
-    font-weight: normal;
-    width: 120px;
-    margin: 5px;
-}
+
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */ 
 
 @media only screen and (max-width: 480px) {
-  .col { 
-    margin: 1% 0 1% 0%;}
+  .col { margin: 1% 0 1% 0%;}
   .span_2_of_2, .span_1_of_2 { width: 95%; }
-  .gallery { height: 200vw; }
+  .gallery { height: 200vw;
+  -webkit-flex-wrap: no-wrap; }
   .gallery img { width: 50%; } }
+
+@media screen and (max-width: 600px) {
+   .col { margin: 1% 0 1% 0%;}
+  .span_2_of_2, .span_1_of_2 { width: 95%; }
+  .gallery { height: 200vw;
+  -webkit-flex-wrap: no-wrap; }
+  .gallery img { width: 50%; } }
+}
 
 
 /* Supporyts*/
