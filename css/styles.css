@@ -3,6 +3,10 @@ body {
   /*background: cornflowerblue;*/
 }
 
+.main {
+  background: lavender;s
+}
+
 /* Text*/
 
 p {
@@ -99,6 +103,36 @@ footer {
   background: grey;
 }
 
+/*Gallery*/
+.gallery {
+  background: cornflowerblue;
+}
+.gallery img {
+  height:auto; 
+  width:auto; 
+  max-width:300px; 
+  max-height:300px;}
+
+.gallery img {
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    display: inline;
+    max-width: 80%;
+    height: auto;
+}
+
+.gallery img a:hover {
+   max-width: 95%;
+}
+
+div.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 120px;
+    margin: 5px;
+}
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */ 
 
 @media only screen and (max-width: 480px) {
