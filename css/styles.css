@@ -1,35 +1,38 @@
 
 
 /* Body */
-body {
-  background: /*#FFCC33*/ #666666;
-  
+html {
+  background: 
+ ; 
 }
-
 .container {
-  background: #FFCC99;
+  background: white;
 }
 
 .main {
-  background: lavender;
+ 
 }
 
 /* Text*/
 
 p {
   padding: 0% 5% 0% 5%;
-  background: blue;
+  background: ;
   max-width: 600px;
   margin: 0 auto;
+  font-family: 'Lato', sans-serif;
 }
 
 h1  {
   background: pink;
+  font-family: 'Poiret One', Helvetica, cursive;
+
 }
 
 h2  {
   text-align: center;
   background: hotpink;
+  font-family: 'Poiret One', Helvetica, cursive;
 }
 
 /*Images*/
@@ -43,32 +46,32 @@ img{
 
 nav {
   display: inline-block ;
-  background: purple;
+  background:;
   float: right;
   
 }
 
  .nav li {
-  background: red;
+  background:  #FF3366 ;
   display: inline-block;
   list-style: none;
   height: 1em;
   line-height: 1em;
   padding: 1em;
-  border: 1px dotted white;
+  
    }
 
 /* Banners */
 .banner {
   width: 100%;
   height: 1em;
-  background: orange;
+  background: #FF3366;
 }
 
 .container {
   width: 90%;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 /*  SECTIONS  */
@@ -94,10 +97,10 @@ nav {
 }
 
 .col:first-child { margin-left: 0; 
-background: yellow;}
+}
 
 .col:nth-child(2) { margin-left: 0; 
-background: green;}
+}
 
 /*  GROUPING  */
 .group:before,
@@ -113,12 +116,12 @@ background: green;}
 }
 
 footer { 
-  background: grey;
+  background: #FF3366;
 }
 
 /*Gallery*/
 .gallery {
-      background: cornflowerblue;
+      
       display: -ms-flexbox;
     -ms-flex-direction: column;
     -ms-flex-wrap: wrap;
@@ -128,6 +131,7 @@ footer {
     height: 100vw;
     font-size: 0;
     align-items: center;
+    padding-top:3%;
     }
 
 
@@ -157,6 +161,11 @@ footer {
 }
 
 @media only screen and (min-width: 482px) {
-  body {background-image: url(../img/web-tile.png);
-  background-attachment: fixed;}
+  html { background-image: url(../img/);
+  background-attachment: fixed;
+ }
+}
+
+@media only screen and (max-width: 381px){
+
 }
