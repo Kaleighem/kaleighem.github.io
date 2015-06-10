@@ -238,16 +238,12 @@ footer {
                -o-animation: rotate 1.2s ease-in-out; }
 
 @-webkit-keyframes rotate {
-   0%  { 
-     transform:  rotate(1deg);
- 
-   }
-  100% { 
-    transform:  rotate(360deg);
-  }
-}
+   0%  {  transform:  rotate(1deg);}
+  100% { transform:  rotate(360deg); }}}
 
-}
+
+
+
 
 @media only screen and (max-width: 481px) {
   .col { 
