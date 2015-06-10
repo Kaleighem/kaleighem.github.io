@@ -1,7 +1,9 @@
 /* Body */
 
    html { background-image: url(../img/retina_wood.png);
-  background-attachment: fixed; }
+  background-attachment: fixed;
+
+  }
 
 
 .resume li {
@@ -40,21 +42,34 @@ h1  {
 
 }
 
-h2, footer  {
+h2  {
   text-align: center;
-  background: hotpink;
+  background: ;
+  font-family: 'Poiret One', Helvetica, cursive;
+  background-image: url(../img/retina_wood.png);
+}
+footer  {
+  text-align: center;
+  background:  #FF3366;
   font-family: 'Poiret One', Helvetica, cursive;
 }
-
 h3, h4 {
   font-family: 'Lato', sans-serif;
 }
+
 
 /*Images*/
 
 img{
   width: auto;
   height: auto;}
+
+  .piccenter
+  {
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
 
 
 /*Navigation bar*/
@@ -78,30 +93,26 @@ nav {
   padding-right: 1em;
      }
 
- .nav a:link { color: white;
+  a:link { color: white;
     text-decoration: none;}
-  .nav a:visited {color: white;
+   a:visited {color: white;
     text-decoration: none;}
-  .nav a:hover {color: black;
+   a:hover {color: black;
     text-decoration: underline;
     padding: 1em; }
-  .nav a:active {color: white;
+  a:active {color: white;
     text-decoration: underline;
   }
 
 /* Banners */
 
-.banner {
-  width: 100%;
-  height: 4em;
-  background-image: url(../img/one-cookie.png);
-}
 
 .container {
   width: 90%;
   margin: auto;
   max-width: 1000px;
-  background: rgba(255,255,255,.5);
+  background: rgba(255,255,255,.5); 
+  
 }
 
 
@@ -148,6 +159,10 @@ nav {
 
 footer { 
   background:#FF3366;
+  display: block;
+  height: .5em;
+  margin-top: 2em;
+
 
 }
 
@@ -169,8 +184,25 @@ footer {
 
 .gallery img {
   width: 35%;
-
+ 
  }
+
+/*Other*/
+
+.button {
+  background: #FF3366;
+  color: white;
+  margin-top: 1em;
+  padding-top:.5em;
+}
+
+.button:hover {
+  text-decoration: underline;
+  color: black;
+  width: 20%;
+
+}
+
 
 /*Transition screen size all*/
  *{
@@ -181,6 +213,13 @@ footer {
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */ 
+@media only screen and (min-width: 482px) {
+  .banner {
+  width: 100%;
+  height: 4em;
+  background-image: url(../img/one-cookie.png);
+}
+}
 
 @media only screen and (max-width: 481px) {
   .col { 
@@ -191,12 +230,13 @@ footer {
   .nav {display: block;}
 
 }
-
-@media only screen and (min-width: 482px) {
-
- }
-}
+ 
 
 @media only screen and (max-width: 381px){
+  .container {
 
+  }
 }
+
+
+
