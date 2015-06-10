@@ -33,6 +33,7 @@ p {
   max-width: 600px;
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
+  margin-bottom: 1%
 }
 
 h1  {
@@ -47,6 +48,7 @@ h2  {
   background: ;
   font-family: 'Poiret One', Helvetica, cursive;
   background-image: url(../img/retina_wood.png);
+  padding: .1em;
 }
 footer  {
   text-align: center;
@@ -175,7 +177,7 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100vw;
+    
     font-size: 0;
     align-items: center;
     padding-top:3%;
@@ -183,7 +185,8 @@ footer {
 
 
 .gallery img {
-  width: 35%;
+  width: 50%;
+  max-width: auto;
  
  }
 
@@ -203,6 +206,13 @@ footer {
 
 }
 
+/*animation*/
+
+.rotate {
+  padding-top: 2.5em;
+
+}
+
 
 /*Transition screen size all*/
  *{
@@ -219,14 +229,32 @@ footer {
   height: 4em;
   background-image: url(../img/one-cookie.png);
 }
+
+  .rotate:hover {
+    
+ -webkit-animation: rotate 1.2s ease-in-out;
+    -webkit-animation: rotate 1.2s ease-in-out;
+         -moz-animation: rotate 1.2s ease-in-out;
+               -o-animation: rotate 1.2s ease-in-out; }
+
+@-webkit-keyframes rotate {
+   0%  { 
+     transform:  rotate(1deg);
+ 
+   }
+  100% { 
+    transform:  rotate(360deg);
+  }
+}
+
 }
 
 @media only screen and (max-width: 481px) {
   .col { 
     margin: 1% 0 1% 0%;}
   .span_2_of_2, .span_1_of_2 { width: 95%; }
-  .gallery { height: 200vw; }
-  .gallery img { width: 50%; }
+  
+  .gallery img { width: 90%; }
   .nav {display: block;}
 
 }
